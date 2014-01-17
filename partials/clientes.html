@@ -1,0 +1,15 @@
+<div class="clientes">
+	<div class="lista">
+		Busqueda
+		<ul class="list-group list" >
+			<li ng-repeat="cliente in clientes">
+				<a class="list-group-item element" ng-click="setSel($index)" ng-class="{'active':sel==$index}" >
+				{{cliente.nombre}}
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="informacion">
+		<div class="input-group" ng-repeat="dato in datos"><span class="input-group-addon title">{{dato}}</span><input class="form-control" placeholder="{{dato}}"></div>
+	</div>
+</div>
